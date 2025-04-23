@@ -3,6 +3,7 @@ import 'package:mips_mais/CadastraAlunoScreen.dart';
 import 'package:mips_mais/DesempenhoScreen.dart';
 import 'package:mips_mais/RankingProfessoresScreen.dart';
 import 'package:mips_mais/DesempenhoAlunoScreen.dart';
+import 'package:mips_mais/presentation/widgets/TitleItem.dart';
 
 class StudentsScreen extends StatelessWidget {
   const StudentsScreen({super.key});
@@ -18,9 +19,10 @@ class StudentsScreen extends StatelessWidget {
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text(
-          'Meus alunos',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        title: TitleItem(
+          text: 'Meus alunos',
+          fontSize: 24,
+          color: const Color.fromARGB(255, 252, 252, 252),
         ),
         centerTitle: true,
       ),
